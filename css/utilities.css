@@ -43,13 +43,22 @@
 
 .bg-secondary,
 .btn-secondary {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: var(--ligth-color);
 }
 
 .bg-dark,
 .btn-dark {
   background: var(--dark-color);
+  color: var(--ligth-color2);
+}
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
   color: var(--ligth-color2);
 }
 

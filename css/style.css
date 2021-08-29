@@ -204,3 +204,18 @@ img {
   font-size: 1.25rem;
   margin: 10px;
 }
+
+/* footer */
+footer {
+  background: url("/images/wave-footer.svg") no-repeat;
+  background-size: cover;
+  height: 20rem;
+}
+
+footer .social a {
+  margin: 0 10px;
+}
+
+footer .social img {
+  width: 2rem;
+}
