@@ -18,7 +18,7 @@
   padding: 0.625rem 1.875rem;
   cursor: pointer;
   background: var(--primary-color);
-  color: var(--font-primary-color);
+  color: var(--ligth-color);
   border: none;
   border-radius: 0.75rem;
   font-size: 0.875rem;
@@ -26,11 +26,52 @@
 
 .btn-outline {
   background-color: transparent;
-  border: 1px var(--font-primary-color) solid;
+  border: 1px var(--ligth-color) solid;
+  color: var(--ligth-color2);
 }
 
 .btn:hover {
   transform: scale(0.98);
+}
+
+/* Background & btn color */
+.bg-primary,
+.btn-primary {
+  background: var(--primary-color);
+  color: var(--ligth-color);
+}
+
+.bg-secondary,
+.btn-secondary {
+  background: var(--primary-color);
+  color: var(--ligth-color);
+}
+
+.bg-dark,
+.btn-dark {
+  background: var(--dark-color);
+  color: var(--ligth-color2);
+}
+
+/* Text sizes */
+.lead {
+  font-size: 1.25rem;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
 }
 
 .text-center {
@@ -38,7 +79,7 @@
 }
 
 .text-secondary {
-  color: #7868e6;
+  color: var(--primary-color);
 }
 
 .flex {
