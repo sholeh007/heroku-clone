@@ -134,7 +134,7 @@ img {
 
 .stats-heading {
   max-width: 31.25rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .stats img {
@@ -175,4 +175,32 @@ img {
 
 .cloud .grid {
   grid-template-columns: 4fr 3fr;
+}
+
+/* Languanges */
+.languange {
+  margin: 10rem 0;
+}
+
+.languange .flex {
+  flex-wrap: wrap;
+}
+
+.languange .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: 0.5s;
+}
+
+.languange .card:hover {
+  transform: translateY(-15px);
+}
+
+.languange img {
+  height: 7rem;
+}
+
+.languange h4 {
+  font-size: 1.25rem;
+  margin: 10px;
 }
