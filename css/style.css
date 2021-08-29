@@ -69,6 +69,10 @@ img {
   justify-content: space-between;
 }
 
+.navbar .logo {
+  font-family: "Poppins", sans-serif;
+}
+
 /* showcase */
 .showcase {
   height: 25rem;
@@ -198,6 +202,7 @@ img {
 
 .languange img {
   height: 7rem;
+  width: 8rem;
 }
 
 .languange h4 {
@@ -206,10 +211,8 @@ img {
 }
 
 /* footer */
-footer {
-  background: url("/images/wave-footer.svg") no-repeat;
-  background-size: cover;
-  height: 20rem;
+footer h1 {
+  font-family: "Poppins", sans-serif;
 }
 
 footer .social a {
@@ -218,4 +221,84 @@ footer .social a {
 
 footer .social img {
   width: 2rem;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .showcase {
+    height: auto;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+  }
+
+  .showcase p {
+    font-size: 1.25rem;
+  }
+
+  .stats {
+    margin-top: 12rem;
+  }
+
+  .stats h3 {
+    font-size: 1.5rem;
+  }
+
+  .cli .grid img {
+    width: 80vw;
+    margin-bottom: 2rem;
+  }
+
+  .cli .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .languange img {
+    width: 10rem;
+  }
+
+  footer li {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .navbar {
+    height: 6.875rem;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .showcase-form {
+    top: 1.5rem;
+  }
+
+  .stats {
+    margin-top: 12rem;
+  }
 }
