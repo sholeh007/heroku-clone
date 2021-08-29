@@ -133,7 +133,7 @@ img {
 .bg-hero {
   background: url("/images/wave.svg") no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 535px;
 }
 
 /* stats */
@@ -406,6 +406,6 @@ footer .social img {
   }
 
   .stats {
-    margin-top: 12rem;
+    margin-top: 20rem;
   }
 }
