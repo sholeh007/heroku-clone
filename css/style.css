@@ -80,6 +80,10 @@ img {
   position: relative;
 }
 
+.showcase-text {
+  animation: slideInFromLeft 0.8s ease-in;
+}
+
 .showcase h1 {
   font-size: 2.5rem;
 }
@@ -107,6 +111,7 @@ img {
   padding: 2.5rem;
   z-index: 100;
   justify-self: flex-end;
+  animation: slideInFromRight 0.8s ease-in;
 }
 
 .showcase-form .form-control {
@@ -263,6 +268,43 @@ footer .social img {
   width: 2rem;
 }
 
+/* Animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /* Tablet */
 @media (max-width: 768px) {
   .grid,
@@ -283,11 +325,13 @@ footer .social img {
   .showcase-text {
     text-align: center;
     margin-top: 2.5rem;
+    animation: slideInFromTop 0.8s ease-in;
   }
 
   .showcase-form {
     justify-self: center;
     margin: auto;
+    animation: slideInFromBottom 0.8s ease-in;
   }
 
   .showcase p {
